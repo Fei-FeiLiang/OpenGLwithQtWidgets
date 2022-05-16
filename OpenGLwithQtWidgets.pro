@@ -1,6 +1,4 @@
-QT += core
-QT += gui
-QT += widgets
+QT += widgets opengl openglwidgets
 
 CONFIG += c++11
 CONFIG += utf8_source

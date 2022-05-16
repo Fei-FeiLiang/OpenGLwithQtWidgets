@@ -363,12 +363,15 @@ void MyQuaternion::wheelEvent(QWheelEvent *event)
 {
     event->accept();
     //fovy越小，模型看起来越大
-    if(event->delta() < 0){
+    if(event->angleDelta().y() < 0)
+    {
         //鼠标向下滑动为-，这里作为zoom out
         projectionFovy += 0.5f;
         if(projectionFovy > 90)
             projectionFovy = 90;
-    }else{
+    }
+    else
+    {
         //鼠标向上滑动为+，这里作为zoom in
         projectionFovy -= 0.5f;
         if(projectionFovy < 1)

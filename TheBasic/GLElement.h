@@ -1,5 +1,5 @@
 #pragma once
-#include <QOpenGLWidget>
+#include <QtOpenGLWidgets/QOpenGLWidget>
 #include <QOpenGLFunctions_4_5_Compatibility>
 #include <QOpenGLShaderProgram>
 #include <QOpenGLVertexArrayObject>

@@ -1,5 +1,5 @@
 #pragma once
-#include <QOpenGLWidget>
+#include <QtOpenGLWidgets/QOpenGLWidget>
 #include <QOpenGLFunctions_4_5_Compatibility>
 
 //OpenGL4.5画三角

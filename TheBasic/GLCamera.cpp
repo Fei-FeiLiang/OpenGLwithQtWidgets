@@ -318,7 +318,8 @@ void GLCamera::wheelEvent(QWheelEvent *event)
 {
     event->accept();
     //fovy越小，模型看起来越大
-    if(event->delta() < 0){
+    if(event->angleDelta().y() < 0)
+    {
         //鼠标向下滑动为-，这里作为zoom out
         projectionFovy += cameraSpeed;
         if(projectionFovy > 90)
